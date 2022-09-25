@@ -1,0 +1,22 @@
+<?php
+
+$a = ["Indonesia","Singapura","Malaysia","Brunei","Thailand"];
+
+?>
+<html>
+    <head>
+        <title>Latihan 4B</title>
+    </head>
+    <body>
+        <?php
+        echo ("<b>Daftar Negara Asean Awal : </b>");
+        for ($i=0; $i < count($a); $i++) { 
+            echo "<li>$a[$i]</li>";
+        }
+        $hasil = array_push($a, "Laos", "Filiphina", "Myanmar");//menambah beberapa elemen pada akhir array
+        echo ("<b>Daftar Negara Asean Baru : </b>");
+        for ($i=0; $i < count($a); $i++) { 
+            echo "<li>$a[$i]</li>";}
+        ?>
+    </body>
+</html>
